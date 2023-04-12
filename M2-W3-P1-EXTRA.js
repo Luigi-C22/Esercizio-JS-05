@@ -221,21 +221,41 @@ console.log(average(numbers)) */
 /* EXTRA 8
  Scrivi una funzione chiamata "longest" che ricerca la stringa più lunga all'interno del parametro ricevuto (un array di stringhe).
 */
+/*let str = ["prima", "seconda", "terza", "quarta", "quinta", "sesta", "settima", "millesima"];
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function longest(str){
+    let longestStr ="";
+    let string = "";
+    str.forEach((string) => {
+       if (str[i].length > longestStr.length){
+        longestStr = string;
+       }
+    });
+    return longestStr;
+}console.log(longest);*/
 
 /* EXTRA 9
- Scrivi una funzione per creare un filtro anti spam molto semplice per una casella email. La funzione riceve una stringa come parametro, "emailContent", e ritorna un boolean.
+ Scrivi una funzione per creare un filtro anti spam molto semplice per una casella email.
+ La funzione riceve una stringa come parametro, "emailContent", e ritorna un boolean.
  La funzione deve tornare true se emailContent NON contiene le parole "SPAM" o "SCAM".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*function checkEmailContent(emailContent) {
+    return !emailContent.includes("SPAM") && !emailContent.includes("SCAM");
+    
+  }console.log(checkEmailContent("SPAM"));
+*/
 
 /* EXTRA 10
  Scrivi una funzione che riceve come parametro una data e ritorna il numero di giorni passati ad oggi.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*function daysPassed(date) {
+    const today = new Date();
+    const diffTime = Math.abs(today - date);
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    return diffDays;
+  }console.log(daysPassed(12/04/2023));*/
 
 /* EXTRA 11
  Scrivi una funzione chiamata "matrixGenerator" che riceve come parametri due interi, "x" e "y".
@@ -245,4 +265,16 @@ console.log(average(numbers)) */
  "10","11","12"]
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*function matrixGenerator(x, y) {
+    const matrix = [];
+    let counter = 0;
+    for (let i = 0; i < x; i++) {
+      matrix[i] = [];
+      for (let j = 0; j < y; j++) {
+        matrix[i][j] = counter;
+        counter++;
+      }
+    }
+    return matrix;
+  }console.log(matrixGenerator(3,2));
+*/
